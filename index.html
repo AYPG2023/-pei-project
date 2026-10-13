@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Exposición del Proyecto Ético Individual: autoevaluación, principios para el cambio, Los 7 votos del éxito y código de ética profesional.">
+  <title>Proyecto Ético Individual | PEI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: '#1e2a44', paper: '#ffffff', sage: '#3b82b6', wine: '#3730a3',
+            gold: '#2563eb', mist: '#eaf6ff'
+          },
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            serif: ['Georgia', 'Cambria', 'serif']
+          },
+          boxShadow: { soft: '0 18px 60px rgba(23,32,51,.09)' }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-paper text-ink antialiased">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="print-hidden sticky top-0 z-50 border-b border-ink/10 bg-paper/95 backdrop-blur">
+    <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 lg:px-8">
+      <a href="#inicio" class="flex items-center gap-3" aria-label="Ir a la portada">
+        <span class="grid h-10 w-10 place-items-center rounded-full bg-ink font-serif text-sm font-bold text-white">PEI</span>
+        <span class="hidden text-sm font-bold tracking-wide sm:block">Proyecto Ético Individual</span>
+      </a>
+      <button id="menuButton" class="rounded-lg border border-ink/15 px-3 py-2 text-sm font-semibold md:hidden" type="button" aria-expanded="false" aria-controls="mainNav">Menú</button>
+      <nav id="mainNav" class="hidden items-center gap-1 md:flex" aria-label="Temas de la exposición">
+        <a href="#tema-1">1. Autoevaluación</a><a href="#tema-2">2. Principios</a><a href="#tema-3">3. Portafolio</a><a href="#tema-4">4. Código</a>
+      </nav>
+      <button id="printButton" class="hidden rounded-full bg-ink px-4 py-2 text-sm font-bold text-white transition hover:bg-wine sm:block" type="button">Imprimir / PDF</button>
+    </div>
+    <div class="h-1 bg-ink/10"><div id="readingProgress" class="h-full w-0 bg-wine"></div></div>
+  </header>
+
+  <main id="contenido">
+    <section id="inicio" class="relative isolate overflow-hidden border-b border-ink/10">
+      <div class="absolute inset-y-0 right-0 -z-10 w-1/2 bg-mist/70 [clip-path:polygon(28%_0,100%_0,100%_100%,0_100%)]"></div>
+      <div class="mx-auto grid min-h-[88vh] max-w-7xl items-center gap-12 px-5 py-16 lg:grid-cols-[1.25fr_.75fr] lg:px-8">
+        <div>
+          <p class="eyebrow">Curso de Ética · Exposición personal</p>
+          <h1 class="mt-5 max-w-4xl font-serif text-5xl font-bold leading-[1.02] tracking-tight sm:text-7xl">Proyecto Ético<br><span class="text-wine">Individual</span></h1>
+          <p class="mt-7 max-w-2xl text-lg leading-8 text-ink/70">Una mirada a mis aprendizajes, decisiones y compromisos: reconocer el pasado, practicar el perdón y elegir un nuevo comienzo.</p>
+          <div class="mt-10 flex flex-wrap gap-3">
+            <a href="#tema-2" class="rounded-full bg-wine px-5 py-3 text-sm font-bold text-white">Ir a mi reflexión principal</a>
+            <a href="#tema-1" class="rounded-full border border-ink/20 bg-white/70 px-5 py-3 text-sm font-bold">Comenzar exposición</a>
+          </div>
+        </div>
+        <aside class="rounded-3xl border border-ink/10 bg-white/85 p-6 shadow-soft sm:p-8" aria-label="Datos de presentación">
+          <p class="text-xs font-black uppercase tracking-[.2em] text-sage">Ficha académica</p>
+          <dl class="mt-6 grid gap-5">
+            <div><dt>Estudiante</dt><dd class="editable" contenteditable="true" data-field="student">Anderson Yobany Perdomo García</dd></div>
+            <div><dt>Carné</dt><dd class="editable" contenteditable="true" data-field="student-id">3490-23-2051</dd></div>
+            <div><dt>Curso</dt><dd>Ética</dd></div>
+            <div><dt>Docente</dt><dd class="editable" contenteditable="true" data-field="teacher">Ing. Roberto Torres</dd></div>
+            <div><dt>Institución</dt><dd class="editable" contenteditable="true" data-field="institution">Universidad Mariano Gálvez de Guatemala</dd></div>
+            <div><dt>Sede</dt><dd class="editable" contenteditable="true" data-field="campus">San José Pinula</dd></div>
+            <div><dt>Facultad</dt><dd class="editable" contenteditable="true" data-field="faculty">Ingeniería en Sistemas de Información</dd></div>
+            <div><dt>Plan</dt><dd class="editable" contenteditable="true" data-field="plan">Fin de semana, domingo</dd></div>
+            <div><dt>Sección</dt><dd class="editable" contenteditable="true" data-field="section">A</dd></div>
+            <div><dt>Semestre</dt><dd class="editable" contenteditable="true" data-field="semester">Octavo</dd></div>
+            <div><dt>Fecha</dt><dd class="editable" contenteditable="true" data-field="date">12 de septiembre de 2026</dd></div>
+          </dl>
+          <p class="edit-note mt-6">Los campos punteados son editables y se guardan en este navegador.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="tema-1" class="section-shell">
+      <div class="section-heading">
+        <span>01</span><div><p class="eyebrow">Autoevaluación PEI</p><h2>Reconocer para crecer</h2></div>
+      </div>
+      <p class="section-lead">La autoevaluación permite observar con honestidad mis avances, reconocer lo que debo fortalecer y convertir la reflexión en acciones concretas. Los datos que no están disponibles se mantienen como campos editables para no inventar información.</p>
+
+      <article class="score-story avoid-break" aria-label="Cambio del ámbito familiar entre evaluaciones">
+        <div><p class="eyebrow">Resultado destacado</p><h3>Ámbito familiar</h3><p>La segunda evaluación registra un avance de tres puntos respecto de la primera.</p></div>
+        <div class="score-comparison"><div><small>Primera evaluación</small><strong>65</strong><span>puntos</span></div><b aria-label="aumentó a">→</b><div class="current"><small>Segunda evaluación</small><strong>68</strong><span>puntos</span></div></div>
+        <div class="score-delta"><strong>+3</strong><span>puntos</span></div>
+      </article>
+
+      <div class="mt-10 grid gap-8 matrices-stack">
+        <article class="matrix-card avoid-break">
+          <div class="matrix-title"><span>Primera evaluación</span><small>Registro inicial</small></div>
+          <div class="overflow-x-auto table-scroll" tabindex="0" aria-label="Matriz de primera evaluación; desplázate horizontalmente si es necesario">
+            <table class="pei-matrix"><thead><tr><th>Principio</th><th>Familiar</th><th>Laboral</th><th>Profesional</th><th>Personal</th><th>Espiritual</th></tr></thead><tbody>
+              <tr><th scope="row">Comunicación</th><td>8</td><td>9</td><td>8</td><td>7</td><td>10</td></tr>
+              <tr><th scope="row">Comprender a las personas</th><td>9</td><td>8</td><td>8</td><td>9</td><td>10</td></tr>
+              <tr><th scope="row">Motivar a las personas</th><td class="changed-from">7</td><td>8</td><td>9</td><td>10</td><td>10</td></tr>
+              <tr><th scope="row">Justicia</th><td class="changed-from">7</td><td>8</td><td>8</td><td>9</td><td>10</td></tr>
+              <tr><th scope="row">Crítica</th><td class="changed-from">7</td><td>9</td><td>8</td><td>10</td><td>9</td></tr>
+              <tr><th scope="row">Perdón</th><td>8</td><td>7</td><td>8</td><td>9</td><td>10</td></tr>
+              <tr><th scope="row">Confiar en Dios</th><td>9</td><td>10</td><td>8</td><td>10</td><td>10</td></tr>
+              <tr><th scope="row">Integridad</th><td>10</td><td>9</td><td>8</td><td>9</td><td>10</td></tr>
+              <tr class="total-row"><th scope="row">Total</th><td>65</td><td>68</td><td>65</td><td>73</td><td>79</td></tr>
+            </tbody></table>
+          </div>
+          <div class="evaluation-reflections" aria-labelledby="reflection-one-title">
+            <div class="reflection-heading"><span>Reflexión</span><h3 id="reflection-one-title">Preguntas de la primera evaluación</h3></div>
+            <article class="qa-item"><h4>¿Cuál es el ámbito con menor total?</h4><p>Los ámbitos familiar y profesional empatan en 65 puntos. Para iniciar el plan de mejora elegí el ámbito familiar, en el que identifiqué conductas que puedo trabajar directamente en mis conversaciones y relaciones de cada semana.</p></article>
+            <article class="qa-item"><h4>¿En cuáles principios debo enfocarme para mejorar ese ámbito?</h4><p>En el ámbito familiar, los puntajes más bajos fueron Motivar a las personas, Justicia y Crítica, con 7 puntos cada uno. Por eso, el plan se centró en animar y escuchar a mi familia, procurar un trato justo durante los desacuerdos y evitar participar en comentarios que dañen a otras personas.</p></article>
+          </div>
+        </article>
+        <article class="matrix-card avoid-break">
+          <div class="matrix-title"><span>Segunda evaluación</span><small class="improved">Seguimiento registrado</small></div>
+          <div class="overflow-x-auto table-scroll" tabindex="0" aria-label="Matriz de segunda evaluación; desplázate horizontalmente si es necesario">
+            <table class="pei-matrix"><thead><tr><th>Principio</th><th>Familiar</th><th>Laboral</th><th>Profesional</th><th>Personal</th><th>Espiritual</th></tr></thead><tbody>
+              <tr><th scope="row">Comunicación</th><td>8</td><td>9</td><td>8</td><td>7</td><td>10</td></tr>
+              <tr><th scope="row">Comprender a las personas</th><td>9</td><td>8</td><td>8</td><td>9</td><td>10</td></tr>
+              <tr><th scope="row">Motivar a las personas</th><td class="changed-to">8 <small>↑ 1</small></td><td>8</td><td>9</td><td>10</td><td>10</td></tr>
+              <tr><th scope="row">Justicia</th><td class="changed-to">8 <small>↑ 1</small></td><td>8</td><td>8</td><td>9</td><td>10</td></tr>
+              <tr><th scope="row">Crítica</th><td class="changed-to">8 <small>↑ 1</small></td><td>9</td><td>8</td><td>10</td><td>9</td></tr>
+              <tr><th scope="row">Perdón</th><td>8</td><td>7</td><td>8</td><td>9</td><td>10</td></tr>
+              <tr><th scope="row">Confiar en Dios</th><td>9</td><td>10</td><td>8</td><td>10</td><td>10</td></tr>
+              <tr><th scope="row">Integridad</th><td>10</td><td>9</td><td>8</td><td>9</td><td>10</td></tr>
+              <tr class="total-row"><th scope="row">Total</th><td class="changed-to">68 <small>↑ 3</small></td><td>68</td><td>65</td><td>73</td><td>79</td></tr>
+            </tbody></table>
+          </div>
+          <p class="matrix-explanation">El total familiar aumenta de 65 a 68 por el seguimiento registrado en Motivar a las personas, Justicia y Crítica; los demás puntajes se conservan.</p>
+          <div class="evaluation-reflections" aria-labelledby="reflection-two-title">
+            <div class="reflection-heading"><span>Comparación</span><h3 id="reflection-two-title">Preguntas de la segunda evaluación</h3></div>
+            <article class="qa-item"><h4>Compare esta matriz con la de la página 34.</h4><p>En la primera matriz, los totales fueron familiar 65, laboral 68, profesional 65, personal 73 y espiritual 79. En la segunda son familiar 68, laboral 68, profesional 65, personal 73 y espiritual 79. El cambio se concentra en el ámbito familiar, que sube tres puntos; los otros cuatro ámbitos conservan su puntuación.</p></article>
+            <article class="qa-item"><h4>¿Mejoró el ámbito más deficiente de la primera evaluación?</h4><p>Sí. El ámbito familiar pasó de 65 a 68 puntos. El avance coincide con las cuatro acciones registradas: escuchar, conversar con respeto, actuar con honestidad y evitar comentarios negativos. Es un progreso inicial que requiere continuidad.</p></article>
+            <article class="qa-item"><h4>¿Hubo mejora en otros ámbitos con respecto al principio más bajo?</h4><p>No se observa un cambio numérico en los demás ámbitos: laboral se mantiene en 68, profesional en 65, personal en 73 y espiritual en 79. Como el seguimiento se enfocó en la familia, no atribuyo mejora a ámbitos en los que no registré acciones específicas. En la siguiente etapa conviene trabajar el ámbito profesional.</p></article>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="tema-2" class="principles-section bg-mist text-ink">
+      <div class="section-shell">
+        <div class="section-heading light"><span>02</span><div><p class="eyebrow text-gold">Principios para el cambio</p><h2>Ética que se convierte en vida</h2></div></div>
+        <p class="section-lead text-white/70">Los principios estudiados orientan la manera en que me relaciono, tomo decisiones y respondo ante las dificultades.</p>
+        <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <article class="principle"><b>01</b><h3>Comunicar, comprender y motivar</h3><p>Escuchar antes de responder, reconocer la realidad de los demás y usar las palabras para construir.</p></article>
+          <article class="principle"><b>02</b><h3>Justicia y crítica</h3><p>Examinar los hechos con equilibrio, evitar juicios apresurados y actuar con respeto por la dignidad humana.</p></article>
+          <article class="principle highlighted"><b>03</b><span class="focus-label">Principio central</span><h3>Perdón y confianza en Dios</h3><p>Soltar una carga que lastima, sin negar lo ocurrido, y encontrar esperanza para seguir adelante.</p></article>
+          <article class="principle"><b>04</b><h3>Integridad</h3><p>Mantener coherencia entre valores, palabras y acciones, incluso cuando nadie está observando.</p></article>
+        </div>
+
+        <article class="forgiveness mt-12 avoid-break">
+          <div class="forgiveness-label">Reflexión central</div>
+          <div class="grid gap-8 lg:grid-cols-[.72fr_1.28fr] lg:items-center">
+            <div><p class="font-serif text-3xl leading-tight sm:text-4xl">Perdonar no cambia el pasado; cambia la manera en que decido vivir el presente.</p></div>
+            <div class="space-y-5 text-base leading-8 text-ink/80">
+              <p>Hace más de siete años, cuando mi hermana estaba por cumplir quince años, murió en una situación relacionada con un joven. Esa pérdida me marcó profundamente. Durante mucho tiempo cargué con culpa y enojo, y me costaba controlar mis impulsos. El perdón fue uno de los principios más difíciles de llevar a la práctica; al comenzar a soltar esa carga, pude abrirme a una nueva etapa de mi vida.</p>
+              <p class="border-l-4 border-wine pl-5 font-semibold text-ink">Aprendí que perdonar no significa olvidar ni justificar lo ocurrido. Para mí, significa evitar que el dolor dirija mis decisiones, trabajar en el dominio de mis impulsos y avanzar con mayor paz, apoyándome en mi fe y buscando actuar con respeto.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="tema-3" class="section-shell">
+      <div class="section-heading"><span>03</span><div><p class="eyebrow">Portafolio · Los 7 votos del éxito</p><h2>Elegir un nuevo comienzo</h2></div></div>
+      <p class="section-lead">La guía se organiza en dos grupos complementarios: los pilares que orientan mis decisiones y los que revelan propósito, carácter y dirección.</p>
+
+      <article class="new-start mt-10 avoid-break">
+        <div class="relative z-10 max-w-3xl">
+          <p class="eyebrow text-gold">Capítulo 1 · Enfoque principal</p>
+          <h3 class="mt-4 font-serif text-4xl font-bold sm:text-6xl">Nuevo comienzo</h3>
+          <p class="mt-6 text-lg leading-8 text-white/80">Este capítulo me recuerda que el pasado influye en mi historia, pero no tiene que decidir todo mi futuro. Dejar de cargar con la culpa y el enojo ha sido parte de elegir conscientemente una nueva etapa: una en la que puedo reconocer el dolor, aprender de lo vivido y orientar mis decisiones hacia la paz, el dominio propio y la esperanza.</p>
+          <div class="mt-8 inline-flex rounded-full border border-white/25 px-5 py-3 text-sm font-bold">Aplicación: elegir cada día la respuesta que me acerca a la persona que deseo ser.</div>
+        </div>
+      </article>
+
+      <div class="mt-12 grid gap-10 lg:grid-cols-2">
+        <div>
+          <div class="pillar-heading"><span>A</span><div><h3>Pilares de decisión</h3><p>Elecciones que se convierten en hábitos.</p></div></div>
+          <div class="chapter-list">
+            <article class="prologue-item"><span>Prólogo</span><div><h4>Prepararse para decidir</h4><p><b>Idea:</b> el cambio comienza al asumir una postura activa. <b>Aplicación:</b> leer mi historia como punto de partida, no como sentencia.</p></div></article>
+            <article><span>02</span><div><h4>Honestidad</h4><p><b>Idea:</b> vivir desde la verdad. <b>Aplicación:</b> reconocer con sinceridad mis emociones, errores y avances.</p></div></article>
+            <article><span>03</span><div><h4>Generosidad</h4><p><b>Idea:</b> compartir tiempo, capacidades y apoyo. <b>Aplicación:</b> ayudar sin esperar siempre una recompensa.</p></div></article>
+            <article><span>04</span><div><h4>Trabajo duro</h4><p><b>Idea:</b> la constancia sostiene los propósitos. <b>Aplicación:</b> cumplir mis responsabilidades aun cuando exijan esfuerzo.</p></div></article>
+            <article><span>05</span><div><h4>Humildad</h4><p><b>Idea:</b> reconocer límites y aprender de otros. <b>Aplicación:</b> aceptar correcciones sin perder mi dignidad.</p></div></article>
+          </div>
+        </div>
+        <div>
+          <div class="pillar-heading wine"><span>B</span><div><h3>Pilares de revelación</h3><p>Claridad para orientar la vida.</p></div></div>
+          <div class="chapter-list">
+            <article class="planning-detail"><span>6.1</span><div><h4>El pilar de la planificación efectiva</h4><p><b>Idea central:</b> establecer metas, organizar el tiempo y los recursos, analizar las consecuencias y ejecutar los planes con disciplina.</p><p><b>Personajes:</b> Néstor, Dennis y Dios. <b>Autoevaluación:</b> 8/10.</p><p><b>Acciones para mejorar:</b> usar una agenda con constancia, establecer fechas límite y dividir las tareas grandes en actividades pequeñas.</p></div></article>
+            <article><span>07</span><div><h4>Sentido común</h4><p><b>Idea:</b> pensar consecuencias antes de actuar. <b>Aplicación:</b> detenerme, evaluar y pedir consejo cuando sea necesario.</p></div></article>
+            <article><span>08</span><div><h4>Dominio propio</h4><p><b>Idea:</b> gobernar impulsos y reacciones. <b>Aplicación:</b> darme tiempo para responder con serenidad ante el enojo.</p></div></article>
+            <article><span>09</span><div><h4>Misión</h4><p><b>Idea:</b> dar dirección y sentido a las decisiones. <b>Aplicación:</b> poner mis capacidades al servicio de una vida íntegra y útil.</p></div></article>
+          </div>
+        </div>
+      </div>
+      <p class="source-note">Nota: no se encontraron las tareas o la guía original en el proyecto. Estos resúmenes se mantienen generales; conviene cotejarlos con el material del curso antes de entregar.</p>
+    </section>
+
+    <section id="tema-4" class="border-y border-ink/10 bg-mist/60">
+      <div class="section-shell">
+        <div class="section-heading"><span>04</span><div><p class="eyebrow">Ingeniería en Sistemas</p><h2>Mi código de ética profesional</h2></div></div>
+        <p class="section-lead">Me comprometo a ejercer mi profesión poniendo las capacidades técnicas al servicio de las personas y del bien común.</p>
+        <ol class="ethics-grid mt-10">
+          <li><b>01</b><div><h3>Proteger la privacidad</h3><p>Recolectar solo los datos necesarios, resguardarlos y respetar el consentimiento de sus titulares.</p></div></li>
+          <li><b>02</b><div><h3>Diseñar con seguridad</h3><p>Prevenir riesgos, corregir vulnerabilidades y no ignorar amenazas conocidas.</p></div></li>
+          <li><b>03</b><div><h3>Actuar con transparencia</h3><p>Comunicar capacidades, limitaciones, errores y conflictos de interés con honestidad.</p></div></li>
+          <li><b>04</b><div><h3>Entregar calidad</h3><p>Probar el software, documentarlo y procurar que sea confiable, mantenible y accesible.</p></div></li>
+          <li><b>05</b><div><h3>Respetar la autoría</h3><p>Reconocer licencias y fuentes; no apropiarme del trabajo intelectual de otras personas.</p></div></li>
+          <li><b>06</b><div><h3>Aprender continuamente</h3><p>Actualizar mis conocimientos y asumir responsabilidad por el impacto de mi trabajo.</p></div></li>
+          <li><b>07</b><div><h3>Tratar con dignidad</h3><p>Escuchar y colaborar sin discriminar, humillar ni excluir a usuarios o compañeros.</p></div></li>
+          <li><b>08</b><div><h3>Usar bien la tecnología</h3><p>Evitar soluciones que engañen, dañen o manipulen; evaluar sus consecuencias sociales.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section-shell">
+      <div class="grid gap-8 lg:grid-cols-[1.2fr_.8fr]">
+        <article class="rounded-3xl bg-wine p-8 text-white sm:p-12 avoid-break"><p class="eyebrow text-white/65">Conclusión general</p><h2 class="mt-4 font-serif text-4xl font-bold">La ética se demuestra en las decisiones.</h2><p class="mt-6 max-w-3xl text-lg leading-8 text-white/80">Este proyecto me permite reconocer que crecer no consiste en negar lo vivido, sino en decidir qué haré con ello. El perdón y la posibilidad de un nuevo comienzo ocupan el centro de mi proceso; los demás principios me ofrecen herramientas para sostenerlo con integridad, responsabilidad y respeto.</p></article>
+        <article class="rounded-3xl border border-ink/10 bg-white p-8 shadow-soft avoid-break"><p class="eyebrow">Recomendaciones finales</p><ul class="mt-6 space-y-4 text-ink/75"><li>Revisar periódicamente los compromisos del PEI.</li><li>Convertir cada principio en una acción observable.</li><li>Buscar apoyo cuando el dolor o los impulsos sean difíciles de manejar.</li><li>Aplicar el código de ética en proyectos académicos y profesionales.</li></ul></article>
+      </div>
+      <div class="print-hidden mt-10 flex flex-wrap items-center justify-between gap-4 border-t border-ink/10 pt-8"><p class="text-sm text-ink/60">Antes de entregar, completa los campos punteados y coteja los resúmenes con tu guía.</p><button class="rounded-full bg-ink px-5 py-3 text-sm font-bold text-white" type="button" onclick="window.print()">Imprimir o guardar como PDF</button></div>
+    </section>
+  </main>
+  <footer class="border-t border-ink/10 px-5 py-8 text-center text-sm text-ink/55">Proyecto Ético Individual · Exposición académica</footer>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
