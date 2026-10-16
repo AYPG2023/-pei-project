@@ -78,6 +78,14 @@ body { background:#fff; color:#1e2a44; }
 .evaluation-reflections { padding:1.4rem; background:#fff; }.reflection-heading { display:flex; align-items:center; gap:.8rem; border-bottom:1px solid rgba(59,130,182,.2); padding-bottom:1rem; }.reflection-heading span { border-radius:999px; background:#dbeafe; padding:.4rem .7rem; color:#3730a3; font-size:.6rem; font-weight:900; letter-spacing:.08em; text-transform:uppercase; }.reflection-heading h3 { margin:0; color:#312e81; font:700 1.2rem Georgia,serif; }.qa-item { display:grid; grid-template-columns:minmax(13rem,.72fr) minmax(0,1.28fr); gap:1.5rem; padding:1.25rem 0; }.qa-item + .qa-item { border-top:1px solid rgba(59,130,182,.16); }.qa-item h4 { margin:0; color:#1e3a8a; font-size:.88rem; line-height:1.55; }.qa-item p { margin:0; color:rgba(30,42,68,.74); font-size:.84rem; line-height:1.75; }
 .js-ready .reveal { opacity: 0; transform: translateY(1.5rem); transition: opacity .65s cubic-bezier(.2,.7,.2,1), transform .65s cubic-bezier(.2,.7,.2,1); }
 .js-ready .reveal.is-visible { opacity: 1; transform: none; }
+.ethics-grid li { position:relative; overflow:hidden; transition:background-color .3s ease,box-shadow .3s ease,transform .3s ease; }
+.ethics-grid li::before { content:""; position:absolute; inset:0 auto 0 0; width:4px; padding:0; background:#2563eb; transform:scaleY(0); transform-origin:bottom; transition:transform .55s cubic-bezier(.2,.7,.2,1); }
+.ethics-grid li::after { content:""; position:absolute; top:-70%; left:-35%; width:22%; height:240%; background:rgba(255,255,255,.72); transform:rotate(18deg) translateX(-240%); pointer-events:none; }
+.js-ready .ethics-grid li.reveal:nth-child(odd) { transform:translateX(-2.2rem); }.js-ready .ethics-grid li.reveal:nth-child(even) { transform:translateX(2.2rem); }.js-ready .ethics-grid li.reveal.is-visible { transform:none; }
+.js-ready .ethics-grid li b { opacity:0; transform:scale(.55) rotate(-10deg); transition:opacity .45s ease,transform .55s cubic-bezier(.2,.8,.2,1); }.js-ready .ethics-grid li h3,.js-ready .ethics-grid li p { opacity:0; transform:translateY(.7rem); transition:opacity .45s ease,transform .55s ease; }.js-ready .ethics-grid li p { transition-delay:.08s; }
+.js-ready .ethics-grid li.is-visible b,.js-ready .ethics-grid li.is-visible h3,.js-ready .ethics-grid li.is-visible p { opacity:1; transform:none; }.js-ready .ethics-grid li.is-visible::before { transform:scaleY(1); }.js-ready .ethics-grid li.is-visible::after { animation:ethics-shine .75s .28s ease-out both; }
+.ethics-grid li:hover { z-index:1; background:#fff; box-shadow:0 14px 36px rgba(55,48,163,.12); transform:translateY(-4px)!important; }.ethics-grid li:hover b { color:#2563eb; }
+@keyframes ethics-shine { from { transform:rotate(18deg) translateX(-240%); } to { transform:rotate(18deg) translateX(760%); } }
 .stagger-group .reveal:nth-child(2) { transition-delay: .07s; }.stagger-group .reveal:nth-child(3) { transition-delay: .14s; }.stagger-group .reveal:nth-child(4) { transition-delay: .21s; }.stagger-group .reveal:nth-child(5) { transition-delay: .06s; }.stagger-group .reveal:nth-child(6) { transition-delay: .12s; }.stagger-group .reveal:nth-child(7) { transition-delay: .18s; }.stagger-group .reveal:nth-child(8) { transition-delay: .24s; }
 @media (max-width: 767px) {
   #mainNav.open { position: absolute; left: 1rem; right: 1rem; top: 4.2rem; display: grid; gap: .2rem; border: 1px solid rgba(23,32,51,.12); border-radius: 1rem; background: #fff; padding: .75rem; box-shadow: 0 20px 60px rgba(23,32,51,.16); }
@@ -87,12 +95,13 @@ body { background:#fff; color:#1e2a44; }
   .pei-matrix { min-width:43rem; }
   .qa-item { grid-template-columns:1fr; gap:.55rem; }
 }
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior:auto; }.js-ready .reveal { opacity:1; transform:none; transition:none!important; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior:auto; }.js-ready .reveal,.js-ready .ethics-grid li b,.js-ready .ethics-grid li h3,.js-ready .ethics-grid li p { opacity:1; transform:none; transition:none!important; }.ethics-grid li::before { transform:scaleY(1); transition:none; }.ethics-grid li::after { display:none; }.ethics-grid li:hover { transform:none!important; } }
 @media print {
   @page { size: A4; margin: 13mm; }
   html { scroll-behavior: auto; } body { background: white !important; color: #172033 !important; font-size: 10pt; }
   .print-hidden, footer, .skip-link { display: none !important; }
   .js-ready .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+  .ethics-grid li,.ethics-grid li b,.ethics-grid li h3,.ethics-grid li p { opacity:1!important; transform:none!important; animation:none!important; transition:none!important; }.ethics-grid li::before,.ethics-grid li::after { display:none!important; }
   #inicio > div:first-child { display: none; }
   #inicio .min-h-\[88vh\] { min-height: 0 !important; padding-block: 2rem !important; }
   .section-shell { width: 100%; padding-block: 2rem; }
